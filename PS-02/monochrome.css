@@ -1,0 +1,60 @@
+#bottom{
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	z-index: -2;
+	background-color: black;
+}
+
+
+#info{
+	width: 80%;
+	height: 80%;
+	 position: absolute;
+	z-index: -1;
+	background-color: white;
+	margin: 10% 10% 10% 10%;
+	border: 0px;
+	padding: 0px;
+}
+
+
+#link{
+	width: 150px;
+	height: 50px;
+	position: absolute;
+	z-index: 2;
+	margin-left: 100px;
+	
+	float: left;
+
+
+}
+
+
+
+
+#pic{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	z-index: 3;
+	margin: 50px 50px 50px 50px;
+	border: 0px;
+	padding: 0px;
+	background-color: red;
+	/*float: left;*/
+}
+
+
+
+#pic img{
+	width: 300px;
+	height: 300px;
+	/*margin: px 50px 50px 50px;*/
+	margin: 0px;
+	position: absolute;
+	z-index: 5;
+	filter: grayscale(100%);
+	
+}
