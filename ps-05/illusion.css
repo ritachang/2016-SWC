@@ -1,0 +1,58 @@
+
+
+body{
+	background-color:#dcdcdc;
+}
+
+
+
+#img {
+
+	height: 200px;
+	width:200px;
+
+
+}
+#pic{
+	position: relative;
+	padding-left: 520px;
+	padding-top: 10px;
+
+}
+#div{
+	padding-top: 10px;
+
+	position: relative;
+	margin-left: 400px;
+	
+    width: 700px;
+    height: 180px;
+ 
+    margin: 
+    padding-left:10px;
+   
+}
+ 
+.h1 {font-size: 40px;
+	
+	font-weight:500;
+	padding-left: 200px;
+	font-family: 'Crimson Text', serif;
+	
+
+}
+
+
+h2.word{
+
+	font-size: 25px;
+	text-align: left;
+	font-weight: lighter;
+	font-family: 'Cormorant Garamond', serif;
+}
+p.word{
+	padding-top: 10px;
+	text-align: left;
+	font-size: 15px;
+
+}
