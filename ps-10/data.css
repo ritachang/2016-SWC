@@ -1,0 +1,32 @@
+svg {
+/*   border: 1px solid #B0C4DE; */
+}
+.line {
+  stroke: #778899;
+}
+
+
+body {
+  margin: 4em;
+  font-family: 'Arvo', serif;
+  font-size: 10pt;
+
+  background-color:#FFFFF0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+svg {
+  background-color:	#FAF0E6;
+  font-size: 11pt;
+}
+
+#top{
+
+  font-size: 15pt;
+  font-weight: bold;
+  padding-bottom: 5px;
+  color:  #DEB887;
+  align-items: center;
+}
