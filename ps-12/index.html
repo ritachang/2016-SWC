@@ -17,6 +17,10 @@ path:hover, path.highlighted {
   fill: tomato;
 }
 
+path.sameSex {
+  fill: red;
+}
+
 </style>
 <body>
 <script src="//d3js.org/d3.v3.min.js"></script>
@@ -26,6 +30,16 @@ path:hover, path.highlighted {
 //Map dimensions (in pixels)
 var width = 600,
     height = 255;
+
+var sameSexCountries = ["USA", "someOtherCountry"];
+
+function countryClass(country) {
+  if (sameSexCountries.includes(country.properties.name)) {
+    return "sameSex";
+  };
+  return "notSameSex";
+};
+
 
 //Map projection
 var projection = d3.geo.robinson()
@@ -63,6 +77,7 @@ d3.json("countries.geojson",function(error,geodata) {
     .enter()
     .append("path")
     .attr("d",path)
+    .attr('class', countryClass)
     .on("click",clicked);
 
 });
