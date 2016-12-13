@@ -14,23 +14,22 @@
 	transition: all 0.4s ease-in-out;
 }
 
-.home 
-  background-image: url();
+
+.rain{ 
+   background-image: url(https://www.welovesolo.com/wp-content/uploads/vecteezy/22/vnfptga3oqy.jpg);
   background-size:cover;
-  background-repeat:no-repeat; }
-.rain {  
-  background-image: url(http://nextgenmilspouse.com/wp-content/uploads/2015/06/legal-gay-marriage.jpg);
-  background-size:cover;
+
   background-repeat:no-repeat; }
 .map { 
-   background-image: url();
+   background-image: url(http://i.istockimg.com/file_thumbview_approve/77148065/3/stock-illustration-77148065-heart-pin-map-icon-map-pointer-markers-.jpg);
   background-size:cover;
+
   background-repeat:no-repeat; }
 
 
 .info {
 	position: absolute;
-	background: rgba(82, 78, 126, 0.5);
+	background: rgba(156, 90, 108, 0.9);
 	width: inherit;
 	height: inherit;
 	border-radius: 50%;
@@ -48,27 +47,26 @@
 	-webkit-backface-visibility: hidden;
 }
 
-
-
-*info p {
+.info h1 {
 	color: #fff;
-	padding: 10px 5px;
-	font-style: italic;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 18px;
 	margin: 0 30px;
-	font-size: 20px;
-	border-top: 1px solid #f0f8ff;
-	opacity: 0;
-	-webkit-transition: all 1s ease-in-out 0.4s;
-	   -moz-transition: all 1s ease-in-out 0.4s;
-	    -ms-transition: all 1s ease-in-out 0.4s;
-	     -o-transition: all 1s ease-in-out 0.4s;
-	        transition: all 1s ease-in-out 0.4s;*/
+	padding: 45px 0 0 0;
+	height: 140px;
+	font-family: 'Muli', sans-serif;
+	text-decoration: none;
+	
 }
 
 
 
-.final:hover { box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.1) }
 
+
+
+/*.final:hover { box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.1) }
+*/
 .final:hover .info {
 	opacity: 1;
 	-webkit-transform: scale(1);
@@ -78,10 +76,11 @@
 	        transform: scale(1);
 }
 
-.final:hover .info p { opacity: 1 }
+/*.final:hover .info p { opacity: 2 }*/
 
 body {
 	background-image:url(http://nextgenmilspouse.com/wp-content/uploads/2015/06/legal-gay-marriage.jpg);
+	background-size: 1500px 800px;
 }
 
 
@@ -107,7 +106,7 @@ body {
 	display: table;
 }
 
-.all:after { clear: both }
+.:after { clear: both }
 
 .all li {
 	width: 220px;
@@ -120,8 +119,8 @@ body {
 
 
 
-* {
+*/* {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
-}
+}*/
