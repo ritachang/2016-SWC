@@ -14,12 +14,9 @@
 	transition: all 0.4s ease-in-out;
 }
 
-.home 
-  background-image: url();
-  background-size:cover;
-  background-repeat:no-repeat; }
+.
 .rain {  
-  background-image: url(http://thumb10.shutterstock.com/photos/thumb_large/734647/99287201.jpg);
+  background-image: url(https://thumbs.dreamstime.com/z/rain-rainbow-sky-background-paper-clouds-drops-51752249.jpg);
   background-size:cover;
   background-repeat:no-repeat; }
 .map { 
