@@ -19,12 +19,13 @@
   background-size:cover;
   background-repeat:no-repeat; }
 .rain {  
-  background-image: url(http://nextgenmilspouse.com/wp-content/uploads/2015/06/legal-gay-marriage.jpg);
+  background-image: url(http://thumb10.shutterstock.com/photos/thumb_large/734647/99287201.jpg);
   background-size:cover;
   background-repeat:no-repeat; }
 .map { 
-   background-image: url();
+   background-image: url(http://i.istockimg.com/file_thumbview_approve/77148065/3/stock-illustration-77148065-heart-pin-map-icon-map-pointer-markers-.jpg);
   background-size:cover;
+
   background-repeat:no-repeat; }
 
 
@@ -82,6 +83,7 @@
 
 body {
 	background-image:url(http://nextgenmilspouse.com/wp-content/uploads/2015/06/legal-gay-marriage.jpg);
+	background-size: 1500px 800px;
 }
 
 
