@@ -1,98 +1,53 @@
+
 <!DOCTYPE html>
-<meta charset="utf-8">
-<style>
+<html>
+  <head>
 
-body {
-  font: 12px sans-serif;
-}
+    <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="index.css" /> 
 
-path {
-  stroke-width: 1px;
-  stroke: white;
-  fill: steelblue;
-  cursor: pointer;
-}
+	
+</head>
 
-path:hover, path.highlighted {
-  fill: tomato;
-}
-
-path.sameSex {
-  fill: red;
-}
-
-</style>
 <body>
-<script src="//d3js.org/d3.v3.min.js"></script>
-<script src="//d3js.org/d3.geo.projection.v0.min.js"></script>
-<script>
+	
 
-//Map dimensions (in pixels)
-var width = 600,
-    height = 255;
-
-var sameSexCountries = ["USA", "someOtherCountry"];
-
-function countryClass(country) {
-  if (sameSexCountries.includes(country.properties.name)) {
-    return "sameSex";
-  };
-  return "notSameSex";
-};
+<p id="title">Same-sex Marriage Legalization</p> 
 
 
-//Map projection
-var projection = d3.geo.robinson()
-    .scale(91.78007745865217)
-    .center([-0.0018057527730361458,11.258678472759552]) //projection center
-    .translate([width/2,height/2]) //translate to center the map in view
 
-//Generate paths based on projection
-var path = d3.geo.path()
-    .projection(projection);
+<ul class="all">
+  <li>
+    <div class="final ">
+      <div class="info">
+        
+      <p><a href="homepage.html"> </a>Home</p>
 
-//Create an SVG
-var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
-
-//Group for the map features
-var features = svg.append("g")
-    .attr("class","features");
-
-//Create zoom/pan listener
-//Change [1,Infinity] to adjust the min/max zoom scale
-var zoom = d3.behavior.zoom()
-    .scaleExtent([1, Infinity])
-    .on("zoom",zoomed);
-
-svg.call(zoom);
-
-d3.json("countries.geojson",function(error,geodata) {
-  if (error) return console.log(error); //unknown error, check the console
-
-  //Create a path for each map feature in the data
-  features.selectAll("path")
-    .data(geodata.features)
-    .enter()
-    .append("path")
-    .attr("d",path)
-    .attr('class', countryClass)
-    .on("click",clicked);
-
-});
-
-// Add optional onClick events for features here
-// d.properties contains the attributes (e.g. d.properties.name, d.properties.population)
-function clicked(d,i) {
-
-}
-
-
-//Update map on zoom/pan
-function zoomed() {
-  features.attr("transform", "translate(" + zoom.translate() + ")scale(" + zoom.scale() + ")")
-      .selectAll("path").style("stroke-width", 1 / zoom.scale() + "px" );
-}
-
-</script>
+      </div>
+    </div>
+  </li>
+  
+  <li>
+    <div class="final rain">
+      <div class="info">
+      
+     <p> <a href="rain.html">Rainbow Rain</a></p>
+      </div>
+    </div>
+  </li>
+  
+  <li>
+    <div class="final map">
+      <div class="info">
+       
+        
+       <p><a href="map.html">World Map</a></p>
+      </div>
+      </div></a>
+  </li>
+  
+  
+</ul>
+ 
+</body>
+</html>
